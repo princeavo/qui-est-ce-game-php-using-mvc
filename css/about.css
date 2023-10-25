@@ -1,0 +1,26 @@
+/*About us*/
+#a-propos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-block: 30px;
+}
+.partie{
+    width: 300px;
+    height: 400px;
+    border: 1px solid rgb(67, 49, 49);
+    box-shadow: 0 0 10px rgb(15, 2, 2) ;
+    padding: 30px;
+    margin-block: 10px;
+}
+.partie h2{
+    color: cornflowerblue;
+    margin-block: 10px;
+}
+.partie p{
+    text-align:justify;
+    line-height: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    letter-spacing: 2px;
+}

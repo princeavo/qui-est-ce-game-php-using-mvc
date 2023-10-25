@@ -1,0 +1,10 @@
+/*footer*/
+footer{
+    background-color: rgb(6, 45, 111);
+    color: whitesmoke;
+    font-size: 20px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,40 @@
+/*Section Jouer*/
+#jouer h2{
+    text-align: center;
+    margin-block: 10px;
+}
+#jouer p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+#jouer form{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-inline:20%;
+}
+#jouer form div{
+    margin-block: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+#jouer form div input[type="submit"]{
+    padding-inline: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(132, 0, 255);
+    text-transform: capitalize;
+    border-radius: 10px;
+    transition: 0.2s;
+    box-shadow: 0 0 5px rgb(132, 0, 255) ;
+}
+#jouer form div input[type="submit"]:hover{
+    background-color: rgb(124, 19, 222);
+    color: rgb(138, 176, 247);
+    box-shadow: none;
+    transition: 0.2s;
+}
+#jouer form div label:hover{
+    cursor: pointer;
+    color: darkslateblue;
+}

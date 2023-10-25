@@ -1,0 +1,255 @@
+/*footer*/
+/* footer{
+    background-color: rgb(6, 45, 111);
+    color: whitesmoke;
+    font-size: 20px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/*L'index de jouer/ */
+#jeu{
+    position: relative;
+}
+#jeu #information{
+    position: absolute;
+    bottom: 90px;
+    width: 15%;
+    animation: animation 0.2s forwards ease-out;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 5px;
+    text-align: justify;
+}
+#jeu #butDuJeu{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* display: none; */
+}
+#jeu #scoreP{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:600;
+}
+#jeu #nomJoueurForm{
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 0 8px black;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 12%;
+}
+#jeu #repondre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+    box-shadow:0 0 10px black;
+    margin-top:10px;
+}
+#jeu #repondre #formDevinette{
+    height: auto;
+}
+#jeu form label{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: blueviolet;
+}
+#jeu form select{
+    padding-inline: 10px;
+    padding-block: 5px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#jeu form select option{
+    font-size: 20px;
+}
+#jeu #nomJoueurForm input{
+    width:300px;
+    height:40px; 
+}
+#jeu #nomJoueurForm input[type="submit"]{
+    width: 40%;
+}
+#jeu form input{
+    margin-inline: auto;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin-block: 20px;
+}
+#jeu form input[type="submit"]{
+    width: auto;
+    background-color: blueviolet;
+    color: white;
+    transition: 0.5s;
+}
+#jeu form input[type="submit"]:hover{
+    background-color: rgb(160, 58, 255);
+    color: rgb(190, 202, 212);
+    transition: 0.5s;
+}
+#jeu .none{
+    visibility: hidden;
+}
+#jeu #grille{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    position: relative;
+    padding-bottom: 100px;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 0;
+}
+#jeu #grille img{
+    width:150px;
+    height:100px;
+    margin:auto;
+}
+#jeu #grille div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow:  0 0 8px black;
+    margin-inline: 5px;
+    margin-block: 3px;
+}
+#jeu #repondre #demanderIndice a{
+    display: inline-flex;
+    background-color: blueviolet;
+    padding:5px 10px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-block: 20px;
+    width: auto;
+}
+/* #jeu #grille #repondre form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+} */
+#jeu #grille #repondre a{
+    display: inline-flex;
+    background-color: blueviolet;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    width: auto;
+} 
+/* #jeu #grille #repondre a:hover{
+    background-color: rgb(83, 83, 241);
+} */
+#jeu #repondre #indiceDiv{
+    box-shadow: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    animation: animation 0.5s forwards linear;
+}
+#jeu #repondre #indiceDiv .radio label{
+    margin-inline: 5px;
+    font-size: 15px;
+    font-style: italic;
+    cursor: help;
+}
+#jeu #repondre #indiceDiv  input[name="demanderEstCeVrai"]{
+    padding: 5px;
+    /* background: linear-gradient( to left, rgb(54, 227, 54) ,rgb(239, 30, 30)); */
+    background: blueviolet;
+    position: relative;
+    top: -5px;
+}
+#jeu #repondre #indiceDiv .radio:hover{
+    color: blueviolet;
+}
+#jeu #repondre #indiceDiv input[disabled='disabled']{
+    background-color: rgb(230, 242, 255);
+    color: #666;
+}
+/* #jeu #repondre #indiceDiv input[disabled='disabled']:hover{
+    background-color: rgb(230, 242, 255);
+} */
+@keyframes animation{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+#jeu #conteneurScore{
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#jeu #conteneurScore #scoreDesJoueurs{
+    width: 600px;
+    height: 400px;
+    box-shadow: 0 0 10px black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-style: italic;
+}
+#jeu #conteneurScore #scoreDesJoueurs #felicitations{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+#jeu #conteneurScore #scoreDesJoueurs span{
+    text-decoration:underline;
+    /* color: blueviolet; */
+    font-weight: 900;
+}
+#jeu #conteneurScore #scoreDesJoueurs #commentaire{
+    margin: 10px;
+}
+
+
+
+
+#rejouer{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+/*La liste de la partie about */
+ul{
+    list-style-type: none;
+}
+ul li{ 
+    margin: 10px;
+}

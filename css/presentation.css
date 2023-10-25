@@ -1,0 +1,33 @@
+/*Section présentation*/
+#presentation{
+    background-color: mediumslateblue;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#presentation p {
+    padding-inline:20px;
+    text-align:center;
+}
+#presentation p em {
+    font-weight: 800;
+}
+#presentation p em a {
+    text-decoration: none;
+    color: rgb(210, 210, 210);
+    transition: 0.2s;
+}
+#presentation p em a:hover{
+    color: aqua;
+    transition: 0.2s;
+}
+#presentation h1{
+    font-size: 4rem;
+    font-weight:800;
+    margin: 20px;
+    text-shadow: 0 0 2px black;
+    opacity: 0.7;
+}
